@@ -7,10 +7,12 @@ body{
 
 h1{
   font-weight: 700;
-  background-color: rgba(82,96,117,0.8);
-  -webkit-background-clip: text;
+  color: rgba(82,96,117,0.8);
+/*  -webkit-background-clip: text;
   color: transparent;
-  text-shadow: rgba(255,255,255,0.4) 0 5px 6px;
+*/
+  text-shadow: rgba(255,255,255,0.9) 1px 2px 2px;
+
 }
 
 a{
