@@ -1,0 +1,28 @@
+body{
+  background: #eee;
+  margin: 5em 30em 5em 5em;
+  color: rgba(82,96,117,0.6); 
+  font-family: 'Maven Pro', serif;
+}
+
+h1{
+  font-weight: 700;
+  background-color: rgba(82,96,117,0.8);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255,255,255,0.4) 0 5px 6px;
+}
+
+a{
+  color: rgba(42,116,187,0.8); 
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+a:active{
+  position: relative;
+  top: 1px;
+}
