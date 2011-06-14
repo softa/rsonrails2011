@@ -1,0 +1,21 @@
+!doctype html
+html
+  head
+    title RS on Rails 2011 - Super Cold Edition
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Copse:regular'
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Arimo:regular,italic,bold,bolditalic'
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Raleway:100'
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Covered+By+Your+Grace:regular'
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT:regular,italic'
+    / = stylesheet_link_tag '//fonts.googleapis.com/css?family=Merriweather:regular'
+    = stylesheet_link_tag '//fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900'
+    
+    meta[http-equiv="Content-type" content="text/html; charset=utf-8"]
+    meta[http-equiv="Content-Language" content="en"]
+    link(rel="shortcut icon" href="/favicon.ico")
+    link(rel="profile" href="http://microformats.org/profile/hcard")
+    = stylesheet_link_tag 'rsonrails' 
+    = javascript_include_tag 'jquery/jquery', 'lazy', 'qtip', 'scroll', 'application'
+    = csrf_meta_tag 
+  body
+    = yield

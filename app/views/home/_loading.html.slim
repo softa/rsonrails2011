@@ -1,0 +1,15 @@
+= stylesheet_link_tag 'progress'
+section#about[style="height:100%"]
+  .box
+    h2 Wait a moment...
+    #progress_bar.ui-progress-bar.ui-container
+      .ui-progress[style="width:1%"]
+        span.ui-label
+          b.value 1%
+script
+  | 
+    progress = function(v,f){
+      if(!f) f = function(){}
+      $('.ui-progress').stop().animate({width:v+'%'},{complete:f})
+      $('.ui-label b.value').html(v+'%')
+    }

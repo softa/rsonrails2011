@@ -1,18 +1,24 @@
 body{
-  background: #eee;
-  margin: 5em 30em 5em 5em;
-  color: rgba(82,96,117,0.6); 
+  background: #333 url('/images/rsrails2011.png') no-repeat;
+  margin: 0 auto;
+  padding: 0;
+  color: #ddd;
   font-family: 'Maven Pro', serif;
+  width: 980px;
+  
 }
 
-h1{
-  font-weight: 700;
-  color: rgba(82,96,117,0.8);
-/*  -webkit-background-clip: text;
-  color: transparent;
-*/
-  text-shadow: rgba(255,255,255,0.9) 1px 2px 2px;
+ul#speakers{
+  margin: 0;
+  padding: 0;
+}
 
+ul#speakers li{
+  float: left;
+  list-style: none;
+}
+div.name{
+  display:none;
 }
 
 a{

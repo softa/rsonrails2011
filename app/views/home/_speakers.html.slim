@@ -1,0 +1,27 @@
+section#speakers
+  .slide-bg
+  br
+  .box
+    h2 Palestrantes
+    .photos
+      
+      .stripe.right
+        .skew
+        .stripe-wrapper
+          - for speaker in @speakers
+            .about
+              = speaker[:name]
+
+      = image_tag 'slide.png', :class => 'slide'
+      .frame
+        - for speaker in @speakers
+          = gravatar speaker[:email]
+    ul
+      - for speaker in @speakers
+        li
+          .name = speaker[:name]
+          .company = link_to speaker[:company], speaker[:company]
+      .clear
+    .clear
+  .clear
+  br
