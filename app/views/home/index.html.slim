@@ -1,6 +1,6 @@
 .hidden
   - for file in Dir.glob("app/views/home/tips/*")
-   - file = File.basename(file).scan(/_(\w+)/).to_s
+   - file = File.basename(file).scan(/_(\w+)/).first.first
    div[id=file]= render "home/tips/#{file}"
 
 

@@ -1,4 +1,5 @@
 !doctype html
+
 html
   head
     title RS on Rails 2011 - Super Cold Edition
@@ -14,7 +15,8 @@ html
     meta[http-equiv="Content-Language" content="en"]
     link(rel="shortcut icon" href="/favicon.ico")
     link(rel="profile" href="http://microformats.org/profile/hcard")
-    = stylesheet_link_tag 'rsonrails' 
+    = stylesheet_link_tag 'rsonrails'
+    = stylesheet_link_tag 'nowebkit' if request.user_agent !~ /webkit/i
     = javascript_include_tag 'jquery/jquery', 'lazy', 'qtip', 'scroll', 'application'
     = csrf_meta_tag 
   body
