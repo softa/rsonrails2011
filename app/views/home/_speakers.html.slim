@@ -18,9 +18,9 @@ section#speakers
           = gravatar speaker[:email]
       ul
         - for speaker in @speakers
-          li
+          li.bio
             = raw speaker[:bio]
-    ul
+    ul#spearkers-list
       - for speaker in @speakers
         li
           .name = speaker[:name]
