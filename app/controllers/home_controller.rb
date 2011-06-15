@@ -1,3 +1,4 @@
+# encoding:UTF-8
 class HomeController < ApplicationController
 SPEAKERS =   [{:email => 'andrec@checkplant.com.br', :name => 'André Cantarelli & Frederico Fonseca', :company => 'checkplant.com.br'},
   {:email => 'ccarneiroj@gmail.com', :name => 'Cloves Carneiro', :company => 'amazon.com'},
