@@ -16,7 +16,11 @@ section#speakers
       .frame
         - for speaker in @speakers
           = gravatar speaker[:email]
-    ul
+      ul
+        - for speaker in @speakers
+          li.bio
+            = raw speaker[:bio]
+    ul#spearkers-list
       - for speaker in @speakers
         li
           .name = speaker[:name]

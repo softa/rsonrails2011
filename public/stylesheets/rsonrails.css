@@ -365,10 +365,18 @@ a.tip[rel] { cursor: help; }
 }
 #speakers ul li {
   line-height: 1.1em;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 #speakers ul li .company { font-size: 0.8em; }
 #speakers ul li .name { font-weight: bold; }
+#speakers ul li.selected {
+  border-left: 4px solid white;
+  padding-left: 6px;
+}
+#speakers li.bio {
+  margin-top: 30px;
+  font-size: 0.9em;
+}
 #speakers .stripe .skew { background: -webkit-gradient(linear, right center, center center, from(#006699), to(#004466)); }
 #speakers .stripe .stripe-wrapper { background: -webkit-gradient(linear, 0 top, 100 top, from(#0099dd), to(#006699)); }
 #speakers .stripe.right {
@@ -407,42 +415,7 @@ a.tip[rel] { cursor: help; }
   position: relative;
   -webkit-box-shadow: 3px 3px 5px black;
 }
-#speakers .photos .frame img { position: absolute; }
-#speakers .photos .frame img.br-me {
-  width: 640px;
-  top: -50px;
-  left: -50px;
-}
-#speakers .photos .frame img.br-speakers {
-  width: 640px;
-  top: -80px;
-  left: -50px;
-}
-#speakers .photos .frame img.uy {
-  width: 540px;
-  top: -250px;
-  left: -40px;
-}
-#speakers .photos .frame img.uy-thanx {
-  left: -100px;
-  top: -50px;
-}
-#speakers .photos .frame img.uy-macs {
-  top: -200px;
-  left: -25px;
-}
-#speakers .photos .frame img.tdp {
-  width: 633px;
-  top: -50px;
-  right: -50px;
-}
-#speakers .photos .frame img.rs-2 {
-  width: 640;
-  top: -60px;
-  right: -100px;
-}
-#speakers .photos .frame img.rs-1 {
-  width: 640;
-  top: -60px;
-  right: -100px;
+#speakers .photos .frame img {
+  position: absolute;
+  top: -40px;
 }

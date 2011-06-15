@@ -260,15 +260,21 @@ $(function(){
   imgs = $('.photos .frame img')
   imgs.css({left:'-20px', top:'-60px'})
   abouts = $('.photos .about')
-
+  bios = $('.photos .bio')
+  speakers = $('#spearkers-list li')
+  
   actual = 0
   change_img = function(){
     imgs.eq(actual).fadeOut(function(){ $(this).scale(1) })
     abouts.eq(actual).hide()
+    bios.eq(actual).hide()
+    speakers.eq(actual).removeClass('selected')
     actual++
     if( actual == imgs.length )
       actual = 0
     abouts.eq(actual).show()
+    bios.eq(actual).show()
+    speakers.eq(actual).addClass('selected')
     imgs.eq(actual).fadeIn(function(){
       $(this).animate({scale:0.9}, {duration:10000, easing:'linear', complete:change_img})
     })
@@ -276,6 +282,8 @@ $(function(){
 
   imgs.hide().eq(0).show().animate({scale:0.9}, {duration:10000, easing:'linear', complete:change_img})
   abouts.hide().eq(0).show()
+  bios.hide().eq(0).show()
+  speakers.eq(0).addClass('selected')
 
   $('a.tip[rel]').each(function(){
 
