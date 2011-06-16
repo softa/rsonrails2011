@@ -15,7 +15,10 @@ section#speakers
       = image_tag 'slide.png', :class => 'slide'
       .frame
         - for speaker in @speakers
-          = gravatar speaker[:email]
+          - if speaker[:image]
+            = image_tag speaker[:image]
+          - else
+            = gravatar speaker[:email]
       ul
         - for speaker in @speakers
           li.bio
