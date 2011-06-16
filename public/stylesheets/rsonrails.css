@@ -98,7 +98,10 @@ body #top h1 .edition {
 }
 body .menu-wrapper { height: 50px; }
 body #menu.docked { opacity: 0.6; }
-body #menu.docked .back-to-top { opacity: 1; }
+body #menu.docked .back-to-top {
+  opacity: 1;
+  padding: 10px 22px;
+}
 body #menu.docked:hover { opacity: 0.95; }
 body #menu {
   -webkit-transition: opacity 0.5s ease-out;
@@ -126,7 +129,6 @@ body #menu .back-to-top .icon {
 body #menu a {
   text-decoration: none;
   display: block;
-  padding: 10px 30px 10px 0px;
   color: inherit;
 }
 body #menu a small { color: #888888; }
@@ -141,6 +143,7 @@ body #menu ul {
   list-style: none;
 }
 body #menu ul li {
+  padding: 10px 22px;
   line-height: 1em;
   float: left;
 }
@@ -216,7 +219,7 @@ h3.links hr {
   margin: 5px;
 }
 #nilbies {
-  background: #4f5565 url(/images/blackboard2.jpg) no-repeat center top;
+  background: #4f5565 url(/images/blackboard2.jpg) repeat-x center top;
   color: #aaccaa;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
 }

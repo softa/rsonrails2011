@@ -12,19 +12,22 @@
   color: #666666;
   background: none !important;
 }
+dt { width: 90px; }
+body .box { width: 800px; }
 .stripe .stripe-wrapper {
   border: 1px solid #bb0000;
   background: #990000;
+  left: -18px;
 }
-.stripe .stripe .skew {
-  background: #005588;
+.stripe .skew {
   width: 18px;
-  top: 3px;
-}
-.stripe .stripe .skew .right { left: 130px; }
-.stripe.right .skew {
   top: 4px;
-  width: 18px;
+  left: -17px;
+}
+.stripe .skew .right { left: 130px; }
+.stripe.right .skew {
+  top: 6px;
+  width: 15px;
 }
 #nilbies h2 { color: #00bb66; }
 #nilbies .stripe .stripe-wrapper {
@@ -32,6 +35,7 @@
   border-color: #00dd00;
 }
 #nilbies .stripe .skew { background: #009900; }
+#nilbies .stripe.right { right: 160px !important; }
 #speakers .stripe .stripe-wrapper {
   background: #006699;
   border-color: #0088cc;
