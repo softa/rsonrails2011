@@ -24,7 +24,7 @@ section#speakers
       - for speaker in @speakers
         li
           .name = speaker[:name]
-          .company = link_to speaker[:company], speaker[:company]
+          .company = link_to speaker[:company], 'http://www.'+speaker[:company], :target => :_blank
       .clear
     .clear
   .clear
