@@ -23,10 +23,12 @@ section#speakers
         - for speaker in @speakers
           li.bio
             = raw speaker[:bio]
+            h3= raw speaker[:talk]
+            = raw speaker[:desc]
     ul#spearkers-list
       - for speaker in @speakers
         li
-          .name = speaker[:name]
+          .name[title="Clique para ver mais" style="cursor:pointer !important"] = speaker[:name]
           .company = link_to speaker[:company], 'http://www.'+speaker[:company], :target => :_blank
       .clear
     .clear

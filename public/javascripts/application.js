@@ -264,7 +264,9 @@ $(function(){
   speakers = $('#spearkers-list li')
   
   actual = 0
+  stoped_animation = false
   change_img = function(){
+    if(stoped_animation) return
     imgs.eq(actual).fadeOut(function(){ $(this).scale(1) })
     abouts.eq(actual).hide()
     bios.eq(actual).hide()
@@ -284,6 +286,25 @@ $(function(){
   abouts.hide().eq(0).show()
   bios.hide().eq(0).show()
   speakers.eq(0).addClass('selected')
+
+  $('#spearkers-list li .name').click(function(){
+    stoped_animation = true
+
+    imgs.eq(actual).stop().fadeOut(function(){ $(this).scale(1) })
+    abouts.eq(actual).hide()
+    bios.eq(actual).hide()
+    speakers.eq(actual).removeClass('selected')
+    
+    actual = $(this).parents('li').index('#spearkers-list li')
+
+    abouts.eq(actual).show()
+    bios.eq(actual).show()
+    speakers.eq(actual).addClass('selected')
+    imgs.eq(actual).fadeIn(function(){
+      $(this).animate({scale:0.9}, {duration:10000, easing:'linear'})
+    })
+
+  })
 
   $('a.tip[rel]').each(function(){
 
