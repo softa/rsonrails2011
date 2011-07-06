@@ -16,7 +16,7 @@ section#speakers
       .frame
         - for speaker in @speakers
           - if speaker[:image]
-            = link_to("#", image_tag(speaker[:image]))
+            = image_tag(speaker[:image])
           - else
             = gravatar speaker[:email]
       ul
