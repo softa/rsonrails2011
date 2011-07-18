@@ -418,7 +418,4 @@ a.tip[rel] { cursor: help; }
   position: relative;
   -webkit-box-shadow: 3px 3px 5px black;
 }
-#speakers .photos .frame img {
-  position: absolute;
-  top: -40px;
-}
+#speakers .photos .frame img { position: absolute; }

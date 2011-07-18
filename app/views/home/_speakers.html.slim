@@ -5,20 +5,20 @@ section#speakers
     h2 Palestrantes
     .photos
       
-      .stripe.right
-        .skew
-        .stripe-wrapper
-          - for speaker in @speakers
-            .about
-              = speaker[:name]
+      /.stripe.right
+      /  .skew
+      /  .stripe-wrapper
+      /    - for speaker in @speakers
+      /      .about
+            /  = speaker[:name]
 
-      = image_tag 'slide.png', :class => 'slide'
-      .frame
-        - for speaker in @speakers
-          - if speaker[:image]
-            = image_tag(speaker[:image])
-          - else
-            = gravatar speaker[:email]
+      /= image_tag 'slide.png', :class => 'slide'
+      /.frame
+       / - for speaker in @speakers
+        /  - if speaker[:image]
+         /   = image_tag(speaker[:image])
+          /- else
+           / = gravatar speaker[:email]
       ul
         - for speaker in @speakers
           li.bio
