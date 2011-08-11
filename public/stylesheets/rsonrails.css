@@ -268,35 +268,35 @@ h3.links hr {
   line-height: 1.3em;
 }
 #nilbies img { -webkit-box-shadow: 0 4px 4px rgba(0, 30, 0, 0.7); }
-#tickets {
+#agenda {
   border-top: 1px solid #664422;
   padding-top: 20px;
   font-family: Georgia;
   background: #eeeeee url(/images/fine-writing-paper.jpg);
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.9);
 }
-#tickets h2 {
+#agenda h2 {
   text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.9);
   font-size: 2em;
   color: #666666;
 }
-#tickets ul {
+#agenda ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-#tickets ul li { color: #333333; }
-#tickets ul li img.maileeme {
+#agenda ul li { color: #333333; }
+#agenda ul li img.maileeme {
   float: right;
   margin: 0 0 1em 1em;
 }
-#tickets ul li hr {
+#agenda ul li hr {
   border: 0;
   border-top: 1px dashed #d5cfc1;
   border-bottom: 1px dashed #ffffff;
 }
-#tickets ul li div { padding-left: 1em; }
-#tickets ul li .when {
+#agenda ul li div { padding-left: 1em; }
+#agenda ul li .when {
   padding-left: 0;
   padding-bottom: 0.6em;
   font-weight: bold;
